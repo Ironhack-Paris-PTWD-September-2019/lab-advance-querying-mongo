@@ -54,45 +54,45 @@ limit:  -->
 
 ### 7. All the companies that have a null type of value on the `category_code` field.
 
-<!-- query: /You should copy/paste the query in here/
-projection: /You should copy/paste the projection in here/
-sort: /You should copy/paste the sort in here/
-skip: /You should copy/paste the skip in here/
-limit: /You should copy/paste the limit in here/ -->
+<!-- query: { category_code: { $type:"null"  } }
+projection: 
+sort: 
+skip: 
+limit: -->
 
 ### 8. All the companies that have at least 100 employees but less than 1000. Retrieve only the `name` and `number of employees` fields.
 
-<!-- query: /You should copy/paste the query in here/
-projection: /You should copy/paste the projection in here/
-sort: /You should copy/paste the sort in here/
-skip: /You should copy/paste the skip in here/
-limit: /You should copy/paste the limit in here/ -->
+<!-- query: {$and: [{number_of_employees:{$gte:100}}, {number_of_employees:{$lte:1000}} ] }
+projection: {name:1,number_of_employees: 1,_id:0}
+sort: 
+skip: 
+limit:  -->
 
 ### 9. Order all the companies by their IPO price descendently.
 
-<!-- query: /You should copy/paste the query in here/
-projection: /You should copy/paste the projection in here/
-sort: /You should copy/paste the sort in here/
-skip: /You should copy/paste the skip in here/
-limit: /You should copy/paste the limit in here/ -->
+<!-- query:
+projection: 
+sort: {ipo:-1}
+skip: 
+limit:  -->
 
 ### 10. Retrieve the 10 companies with more employees, order by the `number of employees`
 
-<!-- query: /You should copy/paste the query in here/
-projection: /You should copy/paste the projection in here/
-sort: /You should copy/paste the sort in here/
-skip: /You should copy/paste the skip in here/
-limit: /You should copy/paste the limit in here/ -->
+<!-- query:
+projection: 
+sort: {number_of_employees:-1}
+skip: 
+limit: 10 -->
 
 ### 11. All the companies founded on the second semester of the year. Limit your search to 1000 companies.
 
-<!-- query: /You should copy/paste the query in here/
-projection: /You should copy/paste the projection in here/
-sort: /You should copy/paste the sort in here/
-skip: /You should copy/paste the skip in here/
-limit: /You should copy/paste the limit in here/ -->
+<!-- query: {created_at:{ $in:[ "Jul", "Aug", "Sep", "Oct", "Nov","Dec"] } }
+projection: 
+sort:
+skip:
+limit:  -->
 
-<!-- ### 12. All the companies that have been 'deadpooled' after the third year. -->
+ ### 12. All the companies that have been 'deadpooled' after the third year.
 
 <!-- query: /You should copy/paste the query in here/
 projection: /You should copy/paste the projection in here/
