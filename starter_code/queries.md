@@ -1,4 +1,3 @@
-![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)
 # Answers
 
 ### 1. All the companies that it's name match 'Babelgum'. Retrieve only their `name` field.
